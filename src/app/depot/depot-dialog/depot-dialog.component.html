@@ -1,0 +1,15 @@
+<h3>New Depot</h3>
+<mat-form-field>
+    <mat-label>Code</mat-label>
+    <input matInput cdkFocusInitial [(ngModel)]="data.depot.code" />
+</mat-form-field>
+
+<mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput [(ngModel)]="data.depot.name" />
+</mat-form-field>
+
+<div mat-dialog-actions>
+    <button mat-button [mat-dialog-close]="{ depot: data.depot }">OK</button>
+    <button mat-button (click)="cancel()">Cancel</button>
+</div>

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "my-test-6554b": {
+      "hosting": {
+        "my-test": [
+          "my-test-6554b"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "my-test-6554b"
+  }
+}

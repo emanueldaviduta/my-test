@@ -1,0 +1,13 @@
+.nav-container{
+    background-color: #1976d2;
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.nav-container mat-raised-button{
+    padding: 5px;
+    margin: 10px;
+    color:white;
+    font-weight: 500;
+    font-size: 15px;
+}

@@ -1,0 +1,15 @@
+<button (click)="newDepot()" mat-button>
+    <mat-icon>add</mat-icon> Depot
+</button>
+<ol>
+    <li *ngFor="let item of depot$ | async; else loading">
+        {{item.code}} - {{ item.name }}
+        <button (click)="deleteItem(item)" mat-button>
+            <mat-icon>delete</mat-icon>
+        </button>
+    </li>
+</ol>
+<!-- <mat-raised-button (click)="deleteAll()">Delete all</mat-raised-button>
+<mat-button (click)="insert()">Insert</mat-button> -->
+
+<ng-template #loading>Loading Data...</ng-template>
